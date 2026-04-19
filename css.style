@@ -1,19 +1,20 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    background: #f4f4f4;
+    background: #eef2f6;
 }
 
 /* NAVBAR */
 header {
-    background: #1e2a38;
-    color: white;
-    padding: 15px;
+    background: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .navbar {
@@ -25,29 +26,32 @@ header {
 .logo {
     font-size: 22px;
     font-weight: bold;
-}
-
-.menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
+    color: #1e2a38;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-}
-
-.nav-links li {
-    margin: 0 10px;
+    gap: 20px;
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
 }
 
 /* MOBILE MENU */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -56,79 +60,151 @@ header {
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #1e2a38;
         position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
+        right: 20px;
+        top: 70px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
     }
 
     .nav-links.active {
         display: flex;
     }
-
-    .nav-links li {
-        padding: 10px;
-    }
 }
 
 /* HERO */
 .hero {
-    background: url('https://picsum.photos/1200/400') no-repeat center/cover;
-    color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #e9edf3, #f8fafc);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1e2a38;
 }
 
 .hero button {
-    padding: 10px 20px;
-    background: orange;
+    padding: 12px 25px;
     border: none;
+    border-radius: 6px;
+    background: #3b82f6;
+    color: white;
     cursor: pointer;
+    font-size: 16px;
 }
 
-/* CAR CARDS */
+.hero button:hover {
+    background: #2563eb;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 24px;
+    color: #1e2a38;
+}
+
+/* CAR GRID */
 .cars {
-    padding: 20px;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
     flex-wrap: wrap;
 }
 
+/* CAR CARD */
 .car-card {
     background: white;
+    border-radius: 10px;
+    width: 260px;
     padding: 15px;
-    width: 250px;
-    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
 }
 
 .car-card img {
     width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.car-card h3 {
+    margin: 10px 0;
+}
+
+.car-card p {
+    color: #555;
+}
+
+.car-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #1e2a38;
+    color: white;
+    cursor: pointer;
+}
+
+.car-card button:hover {
+    background: #111827;
 }
 
 /* FORMS */
 form {
-    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+form h2 {
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 input, textarea, select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
-    background: #1e2a38;
-    color: white;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: none;
+    border-radius: 6px;
+    background: #3b82f6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
 }
 
 /* FOOTER */
 footer {
+    margin-top: 40px;
+    background: white;
     text-align: center;
     padding: 15px;
-    background: #1e2a38;
-    color: white;
-    margin-top: 20px;
+    color: #666;
+    border-top: 1px solid #ddd;
 }
