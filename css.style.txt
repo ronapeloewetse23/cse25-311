@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* NAVBAR */
+header {
+    background: #1e2a38;
+    color: white;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1e2a38;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+}
+
+/* HERO */
+.hero {
+    background: url('https://picsum.photos/1200/400') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+/* CAR CARDS */
+.cars {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.car-card img {
+    width: 100%;
+}
+
+/* FORMS */
+form {
+    padding: 20px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #1e2a38;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e2a38;
+    color: white;
+    margin-top: 20px;
+}
