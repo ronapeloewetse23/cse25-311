@@ -24,10 +24,11 @@ header {
 }
 
 .logo img {
-  height: 1920px;
-  width: 1080px;
+  height: 50px;
+  width: auto;
   display: block;
 }
+
 
 
 .nav-links {
