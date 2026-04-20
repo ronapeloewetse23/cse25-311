@@ -23,10 +23,10 @@ header {
     align-items: center;
 }
 
-.logo img {
-  height: 50px;
-  width: auto;
-  display: inline;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1e2a38;
 }
 
 
