@@ -67,6 +67,12 @@ header {
     color: #1e2a38;
 }
 
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1e2a38;
+}
+
 .hero button {
     padding: 12px 25px;
     border: none;
