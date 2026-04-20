@@ -107,17 +107,14 @@ header {
 
 /* CAR CARD */
 .car-card {
-    background: white;
-    border-radius: 10px;
-    width: 260px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .car-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
+    cursor: pointer;
 }
 
 .car-card img {
