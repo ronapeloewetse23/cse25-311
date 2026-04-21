@@ -198,9 +198,7 @@ footer {
     border-top: 1px solid #ddd;
 }
 
-/* ========================= */
-/* 📱 MOBILE RESPONSIVE CSS */
-/* ========================= */
+
 @media (max-width: 768px) {
 
     body {
