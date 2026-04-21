@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Car Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="LE VOYAGE">
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+
+<form>
+    <h2>Payment Details</h2>
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+
+    <input type="text" placeholder="Card Number (1234 5678 9012 3456)" required>
+    
+    <div style="display: flex; gap: 10px;">
+        <input type="text" placeholder="MM/YY" required>
+        <input type="text" placeholder="CVV" required>
+    </div>
+
+    <input type="text" placeholder="Billing Address" required>
+
+    <button type="submit">Pay Now</button>
+</form>
+
+</main>
+
+<footer>
+    © 2026 Le Voyage Executive Chauffeurs and Car Rentals
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
